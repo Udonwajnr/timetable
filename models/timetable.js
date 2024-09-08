@@ -36,3 +36,4 @@ const TimetableSchema = new mongoose.Schema({
 // TimetableSchema.index({ day: 1 });
 
 module.exports = mongoose.model('Timetable', TimetableSchema);
+module.exports = mongoose.model('TimeSlot', TimeSlotSchema);
