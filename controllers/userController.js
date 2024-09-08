@@ -77,7 +77,7 @@ const login = async (req, res) => {
   };
 
   const profile = async (req, res) => {
-      const { id } = req.body;
+      const { id } = req.params;
     try {
       // Find the user by their ID (assumed to be in req.user._id)
       const user = await User.findById(id).select('-password'); // Exclude password field

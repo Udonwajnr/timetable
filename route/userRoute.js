@@ -16,6 +16,6 @@ router.post('/login', login);
 // @route GET /api/users/profile
 // @desc Get user profile
 // @access Private (requires authentication)
-router.get('/profile', profile);
+router.get('/profile/:id', profile);
 
 module.exports = router;
